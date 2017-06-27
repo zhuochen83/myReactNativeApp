@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-elements'
 import JobListContainer from './lib/components/JobListContainer';
-import CreateJob from './lib/components/CreateJob';
 import { JobStack } from './lib/router'
 
 export default class App extends React.Component {
