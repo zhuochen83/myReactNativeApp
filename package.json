@@ -24,8 +24,14 @@
     "moment": "^2.18.1",
     "react": "16.0.0-alpha.6",
     "react-native": "^0.44.0",
+    "react-native-camera": "https://github.com/lwansbrough/react-native-camera.git",
     "react-native-elements": "^0.13.0",
     "react-navigation": "^1.0.0-beta.11",
-    "recompose": "^0.23.5"
+    "react-redux": "^5.0.5",
+    "recompose": "^0.23.5",
+    "redux": "^3.7.1",
+    "redux-observable": "^0.14.1",
+    "rx-dom": "^7.0.3",
+    "rxjs": "^5.4.1"
   }
 }

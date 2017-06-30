@@ -1,23 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Button } from 'react-native-elements'
-import JobListContainer from './lib/components/JobListContainer';
-import { JobStack } from './lib/router'
+import { Provider, connect } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
+import { createEpicMiddleware } from 'redux-observable'
+import AppWithNavigationState from './lib/Navigators'
+import reducers from './lib/reducers'
+import appEpic from './lib/epics'
 
-export default class App extends React.Component {
+const epicMiddleware = createEpicMiddleware(appEpic);
 
+const store = createStore(reducers, applyMiddleware(epicMiddleware));
+
+export default class Root extends React.Component {
   render() {
     return (
-      <JobStack/>      
+      <Provider store={store}>
+        <AppWithNavigationState/>      
+      </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
