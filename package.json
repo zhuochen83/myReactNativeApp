@@ -19,6 +19,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "aws-sdk": "^2.80.0",
     "eslint": "^4.0.0",
     "expo": "^17.0.0",
     "moment": "^2.18.1",
@@ -26,6 +27,7 @@
     "react-native": "^0.44.0",
     "react-native-camera": "https://github.com/lwansbrough/react-native-camera.git",
     "react-native-elements": "^0.13.0",
+    "react-native-vector-icons": "^4.2.0",
     "react-navigation": "^1.0.0-beta.11",
     "react-redux": "^5.0.5",
     "recompose": "^0.23.5",
